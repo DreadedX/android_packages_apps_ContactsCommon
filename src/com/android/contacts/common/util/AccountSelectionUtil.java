@@ -112,13 +112,6 @@ public class AccountSelectionUtil {
         return getSelectAccountDialog(activity, resId, onClickListener, null);
     }
 
-    public static Dialog getSelectAccountDialog(Activity activity, int resId,
-            DialogInterface.OnClickListener onClickListener,
-            DialogInterface.OnCancelListener onCancelListener) {
-        return getSelectAccountDialog(activity, resId, onClickListener,
-            onCancelListener, true);
-    }
-
     /**
      * When OnClickListener or OnCancelListener is null, uses a default listener.
      * The default OnCancelListener just closes itself with {@link Dialog#dismiss()}.
